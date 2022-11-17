@@ -9,6 +9,7 @@ int main(int nargas, char** vargs){
 	avl.insert(8);
 	avl.insert(10);
 	avl.insert(15);
+	avl.insert(16);
 
 	avl.traverse();
 	return 0;
