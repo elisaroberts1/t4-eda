@@ -1,4 +1,5 @@
 #include "trees/avl.hpp"
+#include "aal.hpp"
 #include <iostream>
 #include <fstream>
 #include <cstring>

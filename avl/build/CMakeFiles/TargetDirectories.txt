@@ -1,0 +1,3 @@
+C:/Users/franca/Desktop/T4/t4-eda/avl/build/CMakeFiles/test_avl.dir
+C:/Users/franca/Desktop/T4/t4-eda/avl/build/CMakeFiles/edit_cache.dir
+C:/Users/franca/Desktop/T4/t4-eda/avl/build/CMakeFiles/rebuild_cache.dir
