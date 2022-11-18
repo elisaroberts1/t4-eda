@@ -4,6 +4,10 @@
 #include <cstring>
 #include <string.h>
 
+void dijkstra(const std::string grafo, int v_inicial, int v_final){
+	
+}
+
 std::string read(const std::string filename){
 	std::ifstream f_in(filename);
 	char symbol = '\0';
