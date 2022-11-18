@@ -5,7 +5,7 @@
 #include <string.h>
 
 void dijkstra(const std::string grafo, int v_inicial, int v_final){
-	
+
 }
 
 std::string read(const std::string filename){
@@ -32,13 +32,14 @@ int main(int nargas, char** vargs){
 	std::string doc = "migrafo.grafo";
 	std::string filename(doc);
 	std::string texto=read(filename);
-	avl.insert(16);
+	std::cout << texto[4] << std::endl;
+	/*avl.insert(16);
 	avl.insert(32);
 	avl.insert(45);
 	avl.insert(8);
 	avl.insert(10);
 	avl.insert(15);
 
-	avl.traverse();
+	avl.traverse();*/
 	return 0;
 }
