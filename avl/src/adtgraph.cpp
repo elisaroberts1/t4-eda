@@ -1,7 +1,11 @@
 #include "trees/adtgraph.hpp"
+#include "lLists/node.hpp"
+#include "lLists/linkedList.hpp"
 #include <iostream>
 #include <vector>
 #include <string>
+
+using namespace std;
 
 namespace trees {
 grafo::grafo(int vertices, int aristas){
