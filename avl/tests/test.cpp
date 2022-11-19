@@ -12,6 +12,8 @@ using namespace eda;
 using namespace trees;
 using namespace std;
 
+
+
 void dijkstra(LinkedList a, LinkedList d, int v_final, int v_inicial, int cant){
 	int A[cant];
 	int D[cant];
@@ -22,18 +24,25 @@ void dijkstra(LinkedList a, LinkedList d, int v_final, int v_inicial, int cant){
 	}
 	D[v_inicial] = 0;
 	//H.push();
-	/*while(!H.empty())
+	int j = 1;
+	/*while(!H.empty()){
 		int q = H.top();
 		H.pop();
+		found = False;
+		bool a[v_inicial].find(v_final){
+			found = True;
+		}
+		if(found == True){
+			int p = a[v_inicial].pos(v_final);
+			Node* f = D[v_inicial].find_val_pos(p);
+		}
+		else{
+			A[j] = 
+		}
 		for(int i=0; i <a[q].size() ; i++){
 			int distancia=;
-
-			
-
-
-			
 		}
-
+	}
 	*/
 }
 
