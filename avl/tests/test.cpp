@@ -25,7 +25,12 @@ void dijkstra(LinkedList a, LinkedList d, int v_final, int v_inicial, int cant){
 	/*while(!H.empty())
 		int q = H.top();
 		H.pop();
-		for(int i=0; i < ; i++){
+		for(int i=0; i <a[q].size() ; i++){
+			int distancia=;
+
+			
+
+
 			
 		}
 
@@ -86,8 +91,8 @@ int main(int nargas, char** vargs){
 		v_ini = stoi(v_in);
 		v_fi = stoi(v_f);
 		di = stoi(d);
-		A[v_fi].insertFirst(v_ini);
-		D[v_fi].insertFirst(di);
+		A[v_ini].insertFirst(v_fi);
+		D[v_ini].insertFirst(di);
 	}
 	int p = A[3].pos(1);
 	Node* f = D[3].find_val_pos(p);
