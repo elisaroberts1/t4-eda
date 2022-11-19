@@ -1,3 +1,4 @@
+#include "lLists/linkedList.hpp"
 #include <iostream>
 #include <vector>
 #include <string>
@@ -15,8 +16,8 @@ public:
 public:
 	grafo(){
 	}
-	grafo(int, int){}; //nº de nodos que se tienen, nº de aristas
-	void add_arista(int,int);
+	//grafo(vector<string>, int, LinkedList A[], LinkedList D[]){}; //nº de nodos que se tienen, nº de aristas
+	void aal(vector<string> l, int cant);
 };
 }
 

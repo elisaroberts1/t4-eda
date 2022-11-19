@@ -76,6 +76,26 @@ void LinkedList::removeAll(){
 	}
 }
 
+int LinkedList::pos(int val){
+	Node* ptr = head;
+	int x = 0;
+	while((ptr != nullptr) && (ptr->getData() != val)){
+		ptr = ptr->getNext();
+		x++;
+	}
+	return x;
+}
+
+Node* LinkedList::find_val_pos(int val){
+	Node* ptr = head;
+	int y = 0;
+	while((ptr != nullptr) && (y != val)){
+		ptr = ptr->getNext();
+		y++;
+	}
+	return ptr;
+}
+
 Node* LinkedList::find(int val){
 	Node* ptr = head;
 	while ((ptr != nullptr) && (ptr->getData() != val)){

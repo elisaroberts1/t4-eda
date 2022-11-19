@@ -21,6 +21,8 @@ public:
 	void removeFirst();
 	void remove(int val);
 	void removeAll();
+	int pos(int val);
+	Node* find_val_pos(int val);
 	Node* find(int val);
 	void print();
 	virtual ~LinkedList();

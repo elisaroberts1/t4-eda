@@ -40,7 +40,7 @@ int main(int nargas, char** vargs){
 	}
 	f_in.close();
 	int n = lineas.size() - 1;
-	grafo(cant_v, n);
+	//grafo(lineas, cant_v);
 
 	LinkedList A[cant_v];
 	LinkedList D[cant_v];
@@ -77,7 +77,10 @@ int main(int nargas, char** vargs){
 		D[i].print();
 		cout << endl;
 	}
-	A[0].remove(2);
+	int p = A[3].pos(0);
+	Node* f = D[3].find_val_pos(p);
+	cout << "En la posición " << p+1 << " se encuentra el valor: " << f->getData() << endl;
+	cout << f->getData() << endl;
 	A[0].print();
 	return 0;
 }
