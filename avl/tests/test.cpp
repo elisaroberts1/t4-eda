@@ -1,5 +1,5 @@
 #include "trees/avl.hpp"
-#include "adtgraph.hpp"
+#include "trees/adtgraph.hpp"
 #include <iostream>
 #include <fstream>
 #include <cstring>
@@ -13,10 +13,12 @@ std::string read(const std::string filename){
 	std::ifstream f_in(filename);
 	char symbol = '\0';
 	std::string leyendo;
+	int cant_v = 0;
 	if (f_in.is_open()){
 		while (f_in.get(symbol)){
 			std::cout<<symbol;
 			leyendo+=symbol;
+			
 		}
 		std::cout<<std::endl;
 	}
