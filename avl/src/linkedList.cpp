@@ -118,4 +118,8 @@ LinkedList::~LinkedList() {
 	removeAll();
 }
 
+int LinkedList:: size(LinkedList A){
+
+
+}
 } /* namespace eda */
