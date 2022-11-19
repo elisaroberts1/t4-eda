@@ -69,15 +69,15 @@ int main(int nargas, char** vargs){
 		v_ini = stoi(v_in);
 		v_fi = stoi(v_f);
 		di = stoi(d);
-		A[v_ini].insertFirst(v_fi);
-		D[v_ini].insertFirst(di);
+		A[v_fi].insertFirst(v_ini);
+		D[v_fi].insertFirst(di);
 	}
 	for(int i=0; i < cant_v; i++){
 		A[i].print();
 		D[i].print();
 		cout << endl;
 	}
-	int p = A[3].pos(0);
+	int p = A[3].pos(1);
 	Node* f = D[3].find_val_pos(p);
 	cout << "En la posición " << p+1 << " se encuentra el valor: " << f->getData() << endl;
 	cout << f->getData() << endl;
