@@ -1,30 +1,16 @@
 namespace trees {
 
-enum RotationType{
-	LeftRotation = 10,
-	RightRotation = 20,
-	LeftRightRotation = 30,
-	RightLeftRotation = 40
-};
-
-class AVL {
+class AAL {
 private:
-	AVLNode* root;
-	/*private methods, rotations*/
-	void balance(AVLNode* node);
-	void leftRotation(AVLNode* node);
-	void rightRotation(AVLNode* node);
-	void leftRightRotation(AVLNode* node);
-	void rightLeftRotation(AVLNode* node);
-	RotationType getRotationType(AVLNode* node);
+
 public:
-	AVL();
-	void insert_rec(int val, AVLNode* node);
+	ALL();
+	void insert_rec(int val, ALL* node);
 	void insert(int val);
-	AVLNode* find_rec(int val, AVLNode* node);
-	AVLNode* find(int val);
+	ALLNode* find_rec(int val, AVLNode* node);
+	LLNode* find(int val);
 	void traverse_rec(AVLNode* node, int level);
 	void traverse();
 	virtual ~AVL();
 };
-
+}
