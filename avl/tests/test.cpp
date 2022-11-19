@@ -17,7 +17,7 @@ void dijkstra(LinkedList a, LinkedList d, int v_final, int v_inicial, int cant){
 	int D[cant];
 	//MIN_HEAP
 	for(int i=0; i < cant; i++){
-		D[i] = 'anyValue';
+		D[i] = 10000;
 		A[i] = v_inicial;
 	}
 	D[v_inicial] = 0;
@@ -25,7 +25,9 @@ void dijkstra(LinkedList a, LinkedList d, int v_final, int v_inicial, int cant){
 	/*while(!H.empty())
 		int q = H.top();
 		H.pop();
-		for(int j=0; i < ; i++)
+		for(int i=0; i < ; i++){
+			
+		}
 
 	*/
 }
@@ -87,18 +89,7 @@ int main(int nargas, char** vargs){
 		A[v_fi].insertFirst(v_ini);
 		D[v_fi].insertFirst(di);
 	}
-	for(int i=0; i < cant_v; i++){
-		A[i].print();
-		D[i].print();
-		cout << endl;
-	}
 	int p = A[3].pos(1);
 	Node* f = D[3].find_val_pos(p);
-	cout << "En la posición " << p+1 << " se encuentra el valor: " << f->getData() << endl;
-	cout << f->getData() << endl;
-	A[0].print();
-	for(int i=0; i < cant_v; i++){
-		cout<<D[i].size()<<endl;
-	}
 	return 0;
 }

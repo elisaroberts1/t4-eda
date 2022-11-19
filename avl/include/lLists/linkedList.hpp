@@ -26,6 +26,7 @@ public:
 	Node* find(int val);
 	void print();
 	virtual ~LinkedList();
+	int size();
 };
 
 } /* namespace eda */

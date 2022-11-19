@@ -118,8 +118,13 @@ LinkedList::~LinkedList() {
 	removeAll();
 }
 
-int LinkedList:: size(LinkedList A){
-
-
+int LinkedList::size(){
+	Node* ptr = head;
+	int g = 0;
+	while(ptr != nullptr){
+		ptr = ptr->getNext();
+		g++;
+	}
+	return g;
 }
 } /* namespace eda */
