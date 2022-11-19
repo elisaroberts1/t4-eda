@@ -25,7 +25,7 @@ void dijkstra(LinkedList a, LinkedList d, int v_final, int v_inicial, int cant){
 	/*while(!H.empty())
 		int q = H.top();
 		H.pop();
-		for()
+		for(int j=0; i < cant; i++)
 
 	*/
 }
