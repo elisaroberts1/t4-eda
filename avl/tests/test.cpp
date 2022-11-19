@@ -2,6 +2,8 @@
 #include "trees/adtgraph.hpp"
 #include "lLists/node.hpp"
 #include "lLists/linkedList.hpp"
+#include "lLists/queue.hpp"
+#include "lLists/stack.hpp"
 #include <iostream>
 #include <fstream>
 #include <cstring>
@@ -105,5 +107,15 @@ int main(int nargas, char** vargs){
 	}
 	int p = A[3].pos(1);
 	Node* f = D[3].find_val_pos(p);
+	Stack stack;
+	stack.push(1);
+	stack.push(10);
+	stack.push(5);
+	cout << "hola"<<endl;
+	stack.min_heap();
+	while(!stack.isEmpty()){
+		cout << stack.top()->getData() << endl;
+		stack.pop();
+	}
 	return 0;
 }

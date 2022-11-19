@@ -20,6 +20,33 @@ void Stack::push(int val){
 	push(node);
 }
 
+void Stack::min_heap(){
+	while(head->getNext()->getNext() != nullptr){
+		Node* ptr = head;
+		while(ptr->getNext() != nullptr){
+			if(ptr->getNext()->getData() < ptr->getData()){
+				ptr = ptr->getNext();
+			}
+			else{
+				break;
+			}
+
+		}
+		Node* p1 = ptr;
+		ptr = head;
+		head = p1;
+
+		/*if(ptr->getNext()->getData() < ptr->getData()){
+			ptr = ptr->getNext();
+		}
+		else{
+			Node* ptr1 = ptr->getNext();
+			ptr1->setNext(ptr);
+			ptr = ptr1;
+		}*/
+	}
+}
+
 void Stack::push(Node* node){
 	node->setNext(head);
 	head = node;

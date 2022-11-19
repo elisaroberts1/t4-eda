@@ -10,6 +10,7 @@ namespace eda {
 
 class Node {
 private:
+	
 	int data;
 	Node* ptrNext;
 public:

@@ -20,6 +20,7 @@ public:
 	void push(int val);
 	void push(Node* node);
 	void pop();
+	void min_heap();
 	Node* top();
 	bool isEmpty();
 	void clear();
