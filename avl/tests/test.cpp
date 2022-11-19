@@ -1,42 +1,23 @@
 #include "trees/avl.hpp"
 #include "trees/adtgraph.hpp"
+#include "lLists/node.hpp"
+#include "lLists/linkedList.hpp"
 #include <iostream>
 #include <fstream>
 #include <cstring>
 #include <string.h>
 #include <vector>
 
+using namespace eda;
+using namespace trees;
+using namespace std;
+
 void dijkstra(const std::string grafo, int v_inicial, int v_final){
 
 }
 
-std::string read(const std::string filename, vector<string> lineas){
-	std::ifstream f_in(filename);
-	char symbol = '\0';
-	std::string leyendo;
-	std::string linea;
-	int cant_v = 0;
-	if (f_in.is_open()){
-		while(getline(f_in, linea)){
-			lineas.push_back(linea);
-		}
-		/*while (f_in.get(symbol)){
-			std::cout<<symbol;
-			leyendo+=symbol;
-		}*/
-		std::cout<<std::endl;
-	}
-	else{
-		std::cout<< "Error al leer " << filename << std::endl;
-	}
-	std::cout << lineas[1] << std::endl;
-	f_in.close();
-	std::cout << "se leyo" << std::endl;
-	return leyendo;
-}
-
 int main(int nargas, char** vargs){
-	trees::AVL avl;
+	AVL avl;
 	std::string filename("migrafo.grafo");
 	vector<string> lineas;
 	std::ifstream f_in(filename);
@@ -58,9 +39,45 @@ int main(int nargas, char** vargs){
 		std::cout<< "Error al leer " << filename << std::endl;
 	}
 	f_in.close();
-	std::cout << cant_v << std::endl;
 	int n = lineas.size() - 1;
-	trees::grafo(cant_v, n);
-	std::cout << lineas[1][0] << std::endl;
+	grafo(cant_v, n);
+
+	LinkedList A[cant_v];
+	LinkedList D[cant_v];
+	for(int i = 1; i < lineas.size(); i++){
+		int j=0;
+		string v_in;
+		int v_ini;
+		string v_f;
+		int v_fi;
+		string d;
+		int di;
+		while(lineas[i][j] != '-'){
+			v_in += lineas[i][j];
+			j++;
+		}
+		j++;
+		while(lineas[i][j] != '-'){
+			v_f += lineas[i][j];
+			j++;
+		}
+		j++;
+		while(lineas[i][j] != '\0'){
+			d += lineas[i][j];
+			j++;
+		}
+		v_ini = stoi(v_in);
+		v_fi = stoi(v_f);
+		di = stoi(d);
+		A[v_ini].insertFirst(v_fi);
+		D[v_ini].insertFirst(di);
+	}
+	for(int i=0; i < cant_v; i++){
+		A[i].print();
+		D[i].print();
+		cout << endl;
+	}
+	A[0].remove(2);
+	A[0].print();
 	return 0;
 }

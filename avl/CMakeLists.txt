@@ -9,7 +9,7 @@ LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-add_executable(test_avl tests/test.cpp src/avlNode.cpp src/avl.cpp)
+add_executable(test_avl tests/test.cpp src/avlNode.cpp src/avl.cpp src/node.cpp src/linkedList.cpp)
 target_include_directories(test_avl PUBLIC ${PROJECT_SOURCE_DIR}/include)
 
 
