@@ -12,9 +12,24 @@ using namespace eda;
 using namespace trees;
 using namespace std;
 
-void dijkstra(const std::string grafo, int v_inicial, int v_final){
+void dijkstra(LinkedList a, LinkedList d, int v_final, int v_inicial, int cant){
+	int A[cant];
+	int D[cant];
+	//MIN_HEAP
+	for(int i=0; i < cant; i++){
+		D[i] = anyValue;
+		A[i] = v_inicial;
+	}
+	D[v_inicial] = 0;
+	//H.push();
+	/*while(!H.empty())
+		int q = H.top();
+		H.pop();
+		for()
 
+	*/
 }
+
 
 int main(int nargas, char** vargs){
 	AVL avl;
