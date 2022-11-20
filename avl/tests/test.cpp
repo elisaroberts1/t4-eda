@@ -9,14 +9,12 @@
 #include <cstring>
 #include <string.h>
 #include <vector>
+#include <stdlib.h>
 
 using namespace eda;
 using namespace trees;
 using namespace std;
 
-#include <iostream>
-#include <stdlib.h>
-#include <string.h>
 class node {       // The class
   private:
     string nodeid;
@@ -88,7 +86,33 @@ class min_Heap {
         }
 };
 
+/*void dijkstra_libro(Aa[], Dd[], int v_inicial, int v_final, int cant_v){
+	min_Heap H;
+	int A[cant_v];
+	int D[cant_v];
+	for(int i=0; i < cant_v; i++){
+		D[i] = infinito;
+		A[i] = v_inicial;
+	}
+	D[v_inicial] = 0
+	H.push(<v_inicial, 0>);
+	while (!H.isEmpty()){
+		Node * q = H.top();
+		H.pop();
+		for(para toda arista e adyacente a q.vertex){ (No supimos como leer esta parte del código de dijkstra)
+			Node * d = q.dist + e.value;
+			if(d < D[e.end]){
+				A[e.end] = q.vertex;
+				D[e.end] = d;
+				H.push(<e.end,d>);
+			}
+		}
+	}
+	return A, D;
+}
+*/
 
+//Nuestro intento de código dijkstra
 /*void dijkstra(LinkedList a, LinkedList d, int v_final, int v_inicial, int cant){
 	int A[cant];
 	int D[cant];
